@@ -1,0 +1,28 @@
+{
+    "temp" : [
+        {"dbname":"Field Name","caption":"UI Name","type":"string","condition":"c","t1":"","t2":"","t3":""},
+        {"dbname":"Field Name","caption":"UI Name","type":"numeric","condition":"eq","t1":"","t2":"","t3":""},
+        {"dbname":"Field Name","caption":"UI Name","type":"date","condition":"eq","t1":"","t2":"","t3":""},
+        {"dbname":"Field Name","caption":"UI Name","type":"combo","condition":"","t1":"","t2":"","t3":""}
+    ],
+    "itemtype" : [
+        {"dbname":"t1","caption":"Code","type":"string","condition":"c","t1":"","t2":"","t3":""},
+        {"dbname":"t2","caption":"Description","type":"string","condition":"c","t1":"","t2":"","t3":""}
+    ],
+    "item" : [
+        {"dbname":"t1","caption":"Code","type":"string","condition":"c","t1":"","t2":"","t3":""},
+        {"dbname":"t2","caption":"Description","type":"string","condition":"c","t1":"","t2":"","t3":""},
+        {"dbname":"t3","caption":"Date","type":"date","condition":"eq","t1":"","t2":"","t3":""},
+        {"dbname":"n1","caption":"Type","type":"combo001","condition":"","t1":"","t2":"","t3":""},
+        {"dbname":"n2","caption":"Number","type":"numeric","condition":"eq","t1":"","t2":"","t3":""}
+    ],
+     "calendar" : [
+        {"dbname":"t1","caption":"Code","type":"string","condition":"c","t1":"","t2":"","t3":""},
+        {"dbname":"t2","caption":"Description","type":"string","condition":"c","t1":"","t2":"","t3":""},
+        {"dbname":"t3","caption":"Date","type":"date","condition":"eq","t1":"","t2":"","t3":""},
+        {"dbname":"n1","caption":"Time","type":"combo","condition":"","t1":"","t2":"","t3":""},
+        {"dbname":"n1","caption":"Type","type":"combo","condition":"","t1":"","t2":"","t3":""},
+        {"dbname":"n2","caption":"Remark","type":"string","condition":"c","t1":"","t2":"","t3":""}
+    ]
+}
+

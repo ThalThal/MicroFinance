@@ -1,0 +1,9 @@
+{
+"app" : "Finance DP",
+"appname" : "Finance DP",
+"ver" : "Finance DP",
+"title" : "Finance DP", 
+"apiurl" : "http://localhost:8083/FinanceDP/module001/" 
+
+
+}

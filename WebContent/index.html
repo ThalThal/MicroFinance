@@ -1,0 +1,84 @@
+<html>
+
+<head>
+   <!-- <base href="/" />  -->
+  <!-- <base href="/CheckSIDData/" /> -->
+   <base href="./" />    
+  
+  <link rel="shortcut icon" href="image/DPlogo.png">
+  <title>FinanceDP</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/loading-btn.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <!--for tiny mce-->
+  <!-- <link rel="stylesheet" href="/node_modules/angular2-tinymce/tinymce/skins/lightgray/skin.min.css">
+  <link rel="stylesheet" href="/node_modules/angular2-tinymce/tinymce/skins/lightgray/content.min.css">-->
+
+  <!-- Bootstrap core CSS -->
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+  
+  <!-- 1. Load libraries -->
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/reflect-metadata/Reflect.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- 2. Configure SystemJS -->
+  <script src="systemjs.config.js"></script>
+  <link href="node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet">
+  <script src="node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+  <script src="node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  <script src="fontIdentifier.js"></script>
+  <script>
+    System.import('app/framework/rp-main').catch(function (err) { console.error(err); });
+  </script>
+<style>
+  @font-face {
+    font-family: Unicode;
+    src: url("mm3.ttf");
+  }
+
+  .unicode {
+    font-family: Unicode;
+  }
+
+  @font-face {
+    font-family: ZawgyiOne;
+    src: url("ZawgyiOne2008.ttf");
+  }
+
+  .zawgyi {
+    font-family: ZawgyiOne;
+  }
+</style>
+</head>
+<!-- 3. Display the application -->
+
+<body>
+  <div class="wrapper">
+    <!-- Spinner-blue.gif <iframe id='iframe' src = 'config.txt' onload='readfile()' hidden> </iframe> -->
+    <rp-root>
+
+      <img src="image/Spinner-blue.gif" style="display: block;  margin-left: auto; margin-right: auto; width: 60px;position: relative;
+        padding-top: 200px;">
+
+</rp-root>
+<div class="push"></div>
+<div class="push"></div>
+</div>
+
+</body>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- Path here eg. "mars001/node_modules/...." -->
+
+</html>

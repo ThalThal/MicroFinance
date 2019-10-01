@@ -1,0 +1,413 @@
+input { 
+ font: 12px Arial, sans-serif;
+ border: 1px solid #666;
+}
+
+ a:hover {
+  cursor:pointer;
+ }
+ 
+ #dialog {
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    width: 200px;
+    font-size: 0pt;
+}
+
+#dialog>span:first-child {
+    width: 99%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin: 0.5%;
+    padding: 8px 0px;
+    background: #579A1A;
+    color: white;
+    font-size: 10pt;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#dialog>span>span {
+    text-transform: capitalize;
+}
+
+#dialog>#message-board {
+    height: 300px;
+    overflow-y: auto;
+}
+
+#dialog>#message-board>div {
+    font-size: 10pt;
+    padding: 6px 15px;
+    border-bottom: 1px solid #999;
+}
+
+#dialog>#message-board>div:nth-child(even) {
+    background: #F9FCFF;
+}
+
+#dialog>#message-board>div>:first-child {
+    display: block;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+#dialog>#message {
+    width: 300px;
+    border: 0px;
+    padding: 5px;
+    font-family: helvetica;
+    vertical-align: top;
+    resize: none;
+}
+#dialog>#message:focus {
+    outline: 0px;
+}
+
+#dialog>#send {
+    width: 92px;
+    height: 36px;
+    margin: 4px;
+    border: 0px;
+    color: white;
+    background: #579A1A;
+    vertical-align: top;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#dialog>hr {
+    border: 0px;
+    border-top: 1px solid #bbb;
+}
+.img-circle {
+    border-radius: 50%;
+ }
+ .charbody {
+    padding-top: 48px;
+    padding-bottom: 100%;
+    background-color: #eee;
+}
+.input-groups {
+    position: fixed;
+    width:50%;
+    display: table;
+    bottom:5%;
+    border-collapse: separate;
+
+}
+
+.enscroll-body {
+    position: fixed;
+    height: 45%;
+    bottom: 5%;
+    overflow-y: auto;
+    border-collapse: separate;
+
+}
+.enscroll-body-userlist {
+    position: fixed;    
+    height: 50%;
+    bottom: 5%;
+    overflow-y: auto;
+    border-collapse: separate;
+
+}
+
+.wordwrap { 
+    
+   word-break: break-all;
+   text-align: left;
+   white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+
+}
+
+.message {
+
+    display: inline-block;
+    background: #DBDADB;
+    padding: 10px; 
+}
+/*card layout login*/
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+.card {
+    background-color: #F7F7F7;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+    width: 170px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+   -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 10%;
+}
+
+/*
+ * Form styles
+ */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+}
+.btn.btn-signin {
+    /*background-color: #4d90fe; */
+    background-color: rgb(104, 145, 162);
+    /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
+    padding: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    /*background-color: rgb(12, 97, 33);*/
+    background-color:rgb(255, 0, 0);
+}
+
+.checkbox1 {
+    padding-top: 7px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    min-height: 27px;
+    position: relative;
+    display: block;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  
+    font-weight: 100px;
+        box-sizing: border-box;
+}
+
+
+.lds-spinner {
+	position: relative;
+}
+
+.lds-spinner span {
+	left: 95px;
+	top: 48px;
+	position: absolute;
+	-webkit-animation: lds-spinner linear 0.9s infinite;
+	animation: lds-spinner linear 0.9s infinite;
+	background: #f5f6f7;
+	width: 10px;
+	height: 24px;
+	border-radius: 40%;
+	-webkit-transform-origin: 5px 52px;
+	transform-origin: 5px 52px;
+}
+
+.lds-spinner span:nth-child(1) {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-animation-delay: -0.825s;
+	animation-delay: -0.825s;
+}
+
+.lds-spinner span:nth-child(2) {
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-webkit-animation-delay: -0.75s;
+	animation-delay: -0.75s;
+}
+
+.lds-spinner span:nth-child(3) {
+	-webkit-transform: rotate(60deg);
+	transform: rotate(60deg);
+	-webkit-animation-delay: -0.675s;
+	animation-delay: -0.675s;
+}
+
+.lds-spinner span:nth-child(4) {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-animation-delay: -0.6s;
+	animation-delay: -0.6s;
+}
+
+.lds-spinner span:nth-child(5) {
+	-webkit-transform: rotate(120deg);
+	transform: rotate(120deg);
+	-webkit-animation-delay: -0.525s;
+	animation-delay: -0.525s;
+}
+
+.lds-spinner span:nth-child(6) {
+	-webkit-transform: rotate(150deg);
+	transform: rotate(150deg);
+	-webkit-animation-delay: -0.45s;
+	animation-delay: -0.45s;
+}
+
+.lds-spinner span:nth-child(7) {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	-webkit-animation-delay: -0.375s;
+	animation-delay: -0.375s;
+}
+
+.lds-spinner span:nth-child(8) {
+	-webkit-transform: rotate(210deg);
+	transform: rotate(210deg);
+	-webkit-animation-delay: -0.3s;
+	animation-delay: -0.3s;
+}
+
+.lds-spinner span:nth-child(9) {
+	-webkit-transform: rotate(240deg);
+	transform: rotate(240deg);
+	-webkit-animation-delay: -0.225s;
+	animation-delay: -0.225s;
+}
+
+.lds-spinner span:nth-child(10) {
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);
+	-webkit-animation-delay: -0.15s;
+	animation-delay: -0.15s;
+}
+
+.lds-spinner span:nth-child(11) {
+	-webkit-transform: rotate(300deg);
+	transform: rotate(300deg);
+	-webkit-animation-delay: -0.075s;
+	animation-delay: -0.075s;
+}
+
+.lds-spinner span:nth-child(12) {
+	-webkit-transform: rotate(330deg);
+	transform: rotate(330deg);
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
+}
+
+.lds-spinner {
+	width: 31px !important;
+	height: 31px !important;
+	-webkit-transform: translate(-15.5px, -15.5px) scale(0.155)
+		translate(15.5px, 15.5px);
+	transform: translate(-15.5px, -15.5px) scale(0.155)
+		translate(15.5px, 15.5px);
+}
+
+.container {
+    /*background-image: url("image/1.jpg");
+    background-color: green;*/
+}
+
+/*--
+Author: Colorlib
+Author URL: https://colorlib.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+/*-- reset --*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+
+/*-- start editing from here --*/
+
+
+/* horizontal menu */
+img {
+  max-width: 100%;
+}
+
+/*-- end reset --*/
+body {
+  background: #76b852;
+  /* fallback for old browsers */
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("image/2.jpg");
+}
+

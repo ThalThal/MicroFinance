@@ -1,0 +1,65 @@
+current version of node js 
+-----------------------------
+
+1) current version of node js 
+   -  node -v 
+
+2) to update version of node js (https://nodejs.org/en/download/)
+
+3) to install Angular-CLI 
+   
+   - npm install -g @angular/cli
+
+
+4) After installation, type:
+    
+  - ng -v
+
+5) You can configure the default HTTP host and port used by the development server with two command-line options :
+
+- ng serve --host 0.0.0.0 --port 4201
+
+6) create new Angular Project
+
+- ng new (MyAngular5App) (Project Name)
+
+7) Deploy angular app in tomcat: (similar gulp)
+
+ng build --base-href=/angular/ (project name)
+
+We are ready to deploy angular app in tomcat. Just copy all these files and paste them in /angular folder under /webapps folder in tomcat.
+
+--------------------------------------------------------
+
+declare project structure  (css or bootstrap)
+
+- angular-cli.json
+
+
+npm install @ngx-translate/core --save
+npm install @ngx-translate/http-loaderv
+
+
+
+1. Create minimal Angular4 project
+2. Install and load ngx-translate
+3. Init the TranslateService
+4. Create .json translation files
+5. Translate simple title and intro
+6. Integrate language switcher
+7. Translate sentence with variable
+
+
+Creating a production build
+------------------------------
+ng build –prod –aot
+
+This command will create a dist folder with all the files that need to be uploaded to your server. That includes the following:
+
+    main.hashvalue.bundle.js – a bundled version of your         application
+    vendor.hashvalue.bundle.js – your bundled dependencies
+    polyfill.hashvalue.bundle.js – polyfill dependencies
+    index.html – the index file of the application
+    inline.hashvalue.bundle.js – the webpack loader
+    style.hashvalue.bundle.css – stylesheets
+    assets folder – all resources of your application such as images and fonts
